@@ -1,0 +1,87 @@
+/////////////////////////////////////////////////////////////////////////
+/// \file
+/// \author Bartosz Mindur
+/// \author mindur@fatcat.ftj.agh.edu.pl
+/// \version 0.1
+/// \date 19-10-2004
+/// \brief Inheritance.
+/////////////////////////////////////////////////////////////////////////
+
+#include <iostream>
+
+class CShape
+{
+public:
+	double GetX() const;
+	double GetY() const;
+	void SetX(double x);
+	void SetY(double y);
+	double Pole()
+	{ return 0.0; }
+
+	double x,y;
+};
+/////////////////////////////////////////////////////////////////////////
+inline double CShape::GetX() const
+{
+	return x;
+}
+
+/////////////////////////////////////////////////////////////////////////
+inline double CShape::GetY() const
+{
+	return y;
+}
+
+/////////////////////////////////////////////////////////////////////////
+inline void CShape::SetX(double x)
+{
+	this->x = x;
+}
+
+/////////////////////////////////////////////////////////////////////////
+inline void CShape::SetY(double y)
+{
+	this->y = y;
+}
+
+/////////////////////////////////////////////////////////////////////////
+class CRrec : private CShape
+{
+public:
+	CShape::SetX;
+	CShape::SetY;
+
+	double Pole() const;
+	void rys() const;
+};
+
+/////////////////////////////////////////////////////////////////////////
+inline double CRrec::Pole() const
+{
+	return x*y;
+}
+
+/////////////////////////////////////////////////////////////////////////
+inline void CRrec::rys() const
+{
+	std::cout << "Rysuj CRrec\n";
+}
+
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+int main(int argc, char * argv[])
+{
+	using namespace std;
+	CShape aShape;
+	CRrec bRec;
+
+	cout << "Pole CShape = " << aShape.Pole() << endl;
+
+	bRec.SetX(5.0);
+	bRec.SetY(4.0);
+	cout << "Pole CRrec = " << bRec.Pole() << endl;
+	
+	//niemo¿liwe bo brak dostepu ze wzgledu na prywatne dziedziczenie
+	//cout << "CRrec.X = " << bRec.GetX() << endl;
+}

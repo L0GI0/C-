@@ -1,0 +1,20 @@
+// ten plik MOZNA modyfikowc
+
+#include <iostream>
+#include "PilaSpalinowa.h"
+
+void PilaSpalinowa::WypiszZastosowanie() const
+{
+	std::cout<<"Tego narzedzia uzywa sie do "<<m_zastoswanie<<"."<<std::endl;
+}
+
+void PilaSpalinowa::WypiszPoziomOleju() const
+{
+	std::cout<<"Poziom oleju wynosi "<<m_olej<<"."<<std::endl;
+}
+
+void PilaSpalinowa::Wypisz() const {
+    std::cout << "Pila spalinowa marki " << m_nazwa << ".\n";
+    WypiszZastosowanie();
+    WypiszPoziomOleju();
+}

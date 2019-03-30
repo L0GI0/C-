@@ -1,0 +1,28 @@
+cmake_minimum_required( VERSION 2.6)
+
+project(Test)
+
+add_executable(Test)
+
+set(LIBSRC lib.h lib.cpp)
+
+add_library(Test_lib ${LIBSRC})
+
+target_link_libares(Test Test_lib)
+
+set(CMAKE_BUILD_TYPE Release)
+
+set(CMAKE_CXX_FLAGS_DEBUG "{CMAKE_CXX_FLAGS_DEBUG} -Wall -g 
+-DLIB TEST")
+
+set(CMAKE_CXX_FLAGS_RELEASE "{CMAKE_CXX_FLAGS_RELEASE -Wall -g 
+-DLIB TEST")
+
+install(TARGETS Test DESTINATION bin)
+
+enable_testing()
+
+add_test(TestName1 Tutorial)
+add_test(TestName2 Tutorial "test1")
+add_test(TestName3 Tutorial "test1" "test2")
+add_test(OtherTestName Tutorial)

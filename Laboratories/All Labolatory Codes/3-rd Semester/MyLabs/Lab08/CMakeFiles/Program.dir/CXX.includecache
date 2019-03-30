@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/Lab08/Fun.cpp
+Fun.h
+/home/logio/Desktop/Lab08/Fun.h
+iostream
+-
+
+/home/logio/Desktop/Lab08/Fun.h
+Rational.h
+/home/logio/Desktop/Lab08/Rational.h
+iostream
+-
+
+/home/logio/Desktop/Lab08/MyMakefileWorkHere.cxx
+iostream
+-
+cmath
+-
+MyMakefileWorkHere.hxx
+/home/logio/Desktop/Lab08/MyMakefileWorkHere.hxx
+
+/home/logio/Desktop/Lab08/MyMakefileWorkHere.hxx
+Rational.h
+/home/logio/Desktop/Lab08/Rational.h
+Fun.h
+/home/logio/Desktop/Lab08/Fun.h
+
+/home/logio/Desktop/Lab08/Rational.cpp
+Rational.h
+/home/logio/Desktop/Lab08/Rational.h
+iostream
+-
+
+/home/logio/Desktop/Lab08/Rational.h
+iostream
+-
+

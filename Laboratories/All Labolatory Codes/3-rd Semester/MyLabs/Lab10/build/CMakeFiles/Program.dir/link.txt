@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Program.dir/btest.cpp.o CMakeFiles/Program.dir/BitArray.cpp.o CMakeFiles/Program.dir/Bit.cpp.o  -o Program 

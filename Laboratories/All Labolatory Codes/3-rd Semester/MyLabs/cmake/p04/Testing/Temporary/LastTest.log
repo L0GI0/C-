@@ -1,0 +1,54 @@
+Start testing: Oct 24 17:06 CEST
+----------------------------------------------------------
+1/3 Testing: TestName1
+1/3 Test: TestName1
+Command: "/home/logio/Desktop/PPO/cmake/p04/Tutorial"
+Directory: /home/logio/Desktop/PPO/cmake/p04
+"TestName1" start time: Oct 24 17:06 CEST
+Output:
+----------------------------------------------------------
+It works
+Test foo
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TestName1" end time: Oct 24 17:06 CEST
+"TestName1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: TestName2
+2/3 Test: TestName2
+Command: "/home/logio/Desktop/PPO/cmake/p04/Tutorial" "test1"
+Directory: /home/logio/Desktop/PPO/cmake/p04
+"TestName2" start time: Oct 24 17:06 CEST
+Output:
+----------------------------------------------------------
+It works
+Test foo
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TestName2" end time: Oct 24 17:06 CEST
+"TestName2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: TestName3
+3/3 Test: TestName3
+Command: "/home/logio/Desktop/PPO/cmake/p04/Tutorial" "test1" "test2"
+Directory: /home/logio/Desktop/PPO/cmake/p04
+"TestName3" start time: Oct 24 17:06 CEST
+Output:
+----------------------------------------------------------
+It works
+Test foo
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"TestName3" end time: Oct 24 17:06 CEST
+"TestName3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 24 17:06 CEST

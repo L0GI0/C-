@@ -1,0 +1,1 @@
+Niedokonczone, bledy z pamiecia

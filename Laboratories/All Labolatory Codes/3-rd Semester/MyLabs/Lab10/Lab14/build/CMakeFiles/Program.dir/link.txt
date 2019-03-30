@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/Program.dir/main.cpp.o CMakeFiles/Program.dir/Point2D.cpp.o CMakeFiles/Program.dir/Point2DAverage.cpp.o  -o Program -rdynamic 

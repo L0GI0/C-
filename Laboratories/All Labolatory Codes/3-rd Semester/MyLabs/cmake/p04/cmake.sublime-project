@@ -1,0 +1,82 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "(.+[^:]):(\\d+):(\\d+): (?:fatal )?((?:error|warning): .+)$",
+			"name": "cmake (Linux)",
+			"shell_cmd": "make -j6",
+			"syntax": "Packages/CMakeBuilder/Syntax/Make.sublime-syntax",
+			"variants":
+			[
+				{
+					"name": "clean",
+					"shell_cmd": "make -j6 clean"
+				},
+				{
+					"name": "install/strip",
+					"shell_cmd": "make -j6 install/strip"
+				},
+				{
+					"name": "install/local",
+					"shell_cmd": "make -j6 install/local"
+				},
+				{
+					"name": "install",
+					"shell_cmd": "make -j6 install"
+				},
+				{
+					"name": "list_install_components",
+					"shell_cmd": "make -j6 list_install_components"
+				},
+				{
+					"name": "rebuild_cache",
+					"shell_cmd": "make -j6 rebuild_cache"
+				},
+				{
+					"name": "Tutorial",
+					"shell_cmd": "make -j6 Tutorial"
+				},
+				{
+					"name": "libtest",
+					"shell_cmd": "make -j6 libtest"
+				},
+				{
+					"name": "test",
+					"shell_cmd": "make -j6 test"
+				},
+				{
+					"name": "lib.o",
+					"shell_cmd": "make -j6 lib.o"
+				},
+				{
+					"name": "lib.i",
+					"shell_cmd": "make -j6 lib.i"
+				},
+				{
+					"name": "lib.s",
+					"shell_cmd": "make -j6 lib.s"
+				},
+				{
+					"name": "main.o",
+					"shell_cmd": "make -j6 main.o"
+				},
+				{
+					"name": "main.i",
+					"shell_cmd": "make -j6 main.i"
+				},
+				{
+					"name": "main.s",
+					"shell_cmd": "make -j6 main.s"
+				}
+			],
+			"working_dir": "${project_path}/_bd"
+		}
+	],
+	"settings":
+	{
+		"cmake":
+		{
+			"build_folder": "${project_path}/_bd"
+		}
+	}
+}

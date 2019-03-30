@@ -1,0 +1,7 @@
+#funkcja parsuje podkatalog - jezeli nie znajduje sie w nim CMakeLists.txt to go tworzy includujac szablon (LibraryTemplate.cmake)
+function(parse_directory dir_name)
+	if (NOT EXISTS "${CMAKE_SOURCE_DIR}/${dir_name}/CMakeLists.txt")
+		file (WRITE "${CMAKE_SOURCE_DIR}/${dir_name}/CMakeLists.txt" "include(LibraryTemplate)")
+	endif ()
+	add_subdirectory(${dir_name})
+endfunction(parse_directory)

@@ -1,0 +1,11 @@
+#pragma once
+
+#include <iostream>
+# include "Types.h"
+
+/*klasa generująca wyjatki*/
+class ObiektMiotajacy
+{
+	public:
+		void Rzuc(); //tworzy throw'y
+};

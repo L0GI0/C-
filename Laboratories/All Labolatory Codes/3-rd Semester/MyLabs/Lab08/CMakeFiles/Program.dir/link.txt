@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Program.dir/MyMakefileWorkHere.cxx.o CMakeFiles/Program.dir/Rational.cpp.o CMakeFiles/Program.dir/Fun.cpp.o  -o Program 

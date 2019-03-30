@@ -1,0 +1,20 @@
+// ten plik MOZNA modyfikowc
+
+#include <iostream>
+#include "Srubokret.h"
+
+void Srubkret::WypiszZastosowanie() const
+{
+	std::cout<<"Tego narzedzia uzywa sie do "<<m_zastoswanie<<"."<<std::endl;
+}
+
+void Srubokret::WypiszZrodloNapedu() const
+{
+	std::cout<<"Do napedzenia tego urzadzenia uzywa sie "<<m_zrodlo<<"."<<std::endl;
+}
+
+void Srubokret::Wypisz() const {
+    std::cout << "Srubokret typu " << m_nazwa << ".\n";
+    WypiszZastosowanie();
+    WypiszZrodloNapedu();
+}

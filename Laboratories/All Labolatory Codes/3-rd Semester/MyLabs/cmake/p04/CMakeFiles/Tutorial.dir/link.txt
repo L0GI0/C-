@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG -Wall -DLIB_TEST  -rdynamic CMakeFiles/Tutorial.dir/main.cpp.o  -o Tutorial liblibtest.a 

@@ -1,0 +1,28 @@
+#include <iostream>
+#include <list>
+#include <algorithm>
+#include <iterator>
+
+static int i = 0;
+
+struct gen {
+  int operator() (){
+    ++i;
+    return (i * (-1));
+  }
+};
+
+// Uzupełnij 
+
+
+int main(int argc, char** argv) { 
+  std::list<int> col; 
+  //template <class OutputIterator, class Size, class Generator>
+  //  void generate_n ( OutputIterator first, Size n, Generator gen ) 
+  std::generate_n(back_inserter(col), 9, gen()); 
+  std::for_each(/*uzupełnij*/col.begin(), /*uzupełnij*/col.end(), /*uzupełnij*/std::ostream_iterator<int>(std::cout,":")); 
+} 
+/* 
+output: 
+-9; -8; -7; -6; -5; -4; -3; -2; -1; 
+ */ 

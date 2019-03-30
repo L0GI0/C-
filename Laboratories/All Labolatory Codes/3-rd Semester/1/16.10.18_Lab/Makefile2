@@ -1,0 +1,21 @@
+
+CXX=g++
+CXXFLAGS=-Wall -g -MMD
+SRC=Iloczyn1.cpp Iloczyn2.cpp Iloczyn.cpp Kwadrat1.cpp Main.cpp PolozeniePoczatkowe.cpp Przyspieszenie.cpp Suma1.cpp Suma2.cpp
+OBJ=$(SRC:.cpp=.o)
+
+all: program
+
+program: $(OBJ)
+	$(CXX) $(CXXFLAGS) $(OBJ) -o program
+
+$(OBJ): $(SRC)
+	$(CXX) $(CXXFLAGS) $(SRC) -c
+
+clean:
+	rm *.o program
+	
+.SILENT: clean	
+
+.PHONY: clean
+

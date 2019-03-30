@@ -1,0 +1,1 @@
+Main.o: Main.cpp Lab09.h Urzadzenie.h Cena.h Wypisz.h

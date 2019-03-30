@@ -1,0 +1,1344 @@
+g++ -g -Wall  -MMD -MP   -c -o Fraction.o Fraction.cpp
+Fraction.cpp: In function ‘std::ostream& operator<<(std::ostream&, const FractionRegister&)’:
+Fraction.cpp:53:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Fraction.cpp: In function ‘void* operator new [](std::size_t)’:
+Fraction.cpp:58:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Fraction.cpp: In function ‘bool PointerCheck()’:
+Fraction.cpp:66:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Fraction.cpp: In member function ‘FractionPointer& FractionPointer::operator=(const Fraction&)’:
+Fraction.cpp:76:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Fraction.cpp: At global scope:
+Fraction.cpp:63:13: warning: ‘bool PointerCheck()’ defined but not used [-Wunused-function]
+ static bool PointerCheck()
+             ^
+g++ -g -Wall  -MMD -MP   -c -o Main.o Main.cpp
+Main.cpp: In function ‘void TimesTwo(Fraction*)’:
+Main.cpp:54:21: error: lvalue required as left operand of assignment
+   frac->Numerator() *= 2;
+                     ^
+Main.cpp:55:23: error: lvalue required as left operand of assignment
+   frac->Denominator() *= 2;
+                       ^
+Main.cpp: In function ‘int main()’:
+Main.cpp:67:16: error: no match for ‘operator<<’ (operand types are ‘FractionRegister’ and ‘Fraction’)
+     *fractions << staticFraction;
+                ^
+Main.cpp:67:16: note: candidates are:
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+Main.cpp:67:19: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+     *fractions << staticFraction;
+                   ^
+In file included from Main.cpp:49:0:
+Main.h:50:25: note: std::ostream& operator<<(const ostream&, const FractionRegister&)
+   friend std::ostream & operator << (const std::ostream & s, const FractionRegister & frac);
+                         ^
+Main.h:50:25: note:   no known conversion for argument 1 from ‘FractionRegister’ to ‘const ostream& {aka const std::basic_ostream<char>&}’
+Main.h:16:25: note: std::ostream& operator<<(std::ostream&, const Fraction&)
+   friend std::ostream & operator << (std::ostream & s, const Fraction & frac);
+                         ^
+Main.h:16:25: note:   no known conversion for argument 1 from ‘FractionRegister’ to ‘std::ostream& {aka std::basic_ostream<char>&}’
+Main.cpp:71:53: error: conversion from ‘Fraction*’ to non-scalar type ‘FractionPointer’ requested
+   FractionPointer dynamicFrac1 = new Fraction (4, 16);
+                                                     ^
+Main.cpp:72:7: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘FractionPointer’)
+   cout<<dynamicFrac1<<"\n";
+       ^
+Main.cpp:72:7: note: candidates are:
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.9/ostream:108:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.9/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.9/ostream:117:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.9/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.9/ostream:127:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.9/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.9/ostream:166:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long int’
+/usr/include/c++/4.9/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.9/ostream:170:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long unsigned int’
+/usr/include/c++/4.9/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.9/ostream:174:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘bool’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.9/ostream:181:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.9/ostream:192:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘unsigned int’
+/usr/include/c++/4.9/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.9/ostream:201:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long int’
+/usr/include/c++/4.9/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.9/ostream:205:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long unsigned int’
+/usr/include/c++/4.9/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.9/ostream:220:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘double’
+/usr/include/c++/4.9/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.9/ostream:224:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘float’
+/usr/include/c++/4.9/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.9/ostream:232:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long double’
+/usr/include/c++/4.9/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.9/ostream:245:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘const void*’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   ‘FractionPointer’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘FractionPointer’)
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘char’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘char’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘signed char’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘unsigned char’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   mismatched types ‘const _CharT*’ and ‘FractionPointer’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const char*’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const char*’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const signed char*’
+   cout<<dynamicFrac1<<"\n";
+         ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+Main.cpp:72:9: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const unsigned char*’
+   cout<<dynamicFrac1<<"\n";
+         ^
+Main.cpp:75:42: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘FractionPointer’)
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                          ^
+Main.cpp:75:42: note: candidates are:
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.9/ostream:108:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.9/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.9/ostream:117:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.9/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.9/ostream:127:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.9/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.9/ostream:166:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long int’
+/usr/include/c++/4.9/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.9/ostream:170:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long unsigned int’
+/usr/include/c++/4.9/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.9/ostream:174:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘bool’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.9/ostream:181:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.9/ostream:192:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘unsigned int’
+/usr/include/c++/4.9/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.9/ostream:201:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long int’
+/usr/include/c++/4.9/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.9/ostream:205:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long unsigned int’
+/usr/include/c++/4.9/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.9/ostream:220:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘double’
+/usr/include/c++/4.9/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.9/ostream:224:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘float’
+/usr/include/c++/4.9/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.9/ostream:232:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long double’
+/usr/include/c++/4.9/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.9/ostream:245:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘const void*’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   ‘FractionPointer’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘FractionPointer’)
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘char’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘char’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘signed char’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘unsigned char’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   mismatched types ‘const _CharT*’ and ‘FractionPointer’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const char*’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const char*’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const signed char*’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+Main.cpp:75:44: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const unsigned char*’
+     cout<<"FIRST: "<<staticFraction<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\n";
+                                            ^
+Main.cpp:77:54: error: conversion from ‘Fraction*’ to non-scalar type ‘FractionPointer’ requested
+     FractionPointer dynamicFrac3 = new Fraction (6, 8);
+                                                      ^
+Main.cpp:78:9: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘FractionPointer’)
+     cout<<dynamicFrac3<<"\n";
+         ^
+Main.cpp:78:9: note: candidates are:
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.9/ostream:108:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.9/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.9/ostream:117:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.9/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.9/ostream:127:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.9/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.9/ostream:166:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long int’
+/usr/include/c++/4.9/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.9/ostream:170:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long unsigned int’
+/usr/include/c++/4.9/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.9/ostream:174:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘bool’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.9/ostream:181:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.9/ostream:192:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘unsigned int’
+/usr/include/c++/4.9/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.9/ostream:201:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long int’
+/usr/include/c++/4.9/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.9/ostream:205:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long unsigned int’
+/usr/include/c++/4.9/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.9/ostream:220:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘double’
+/usr/include/c++/4.9/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.9/ostream:224:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘float’
+/usr/include/c++/4.9/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.9/ostream:232:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long double’
+/usr/include/c++/4.9/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.9/ostream:245:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘const void*’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   ‘FractionPointer’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘FractionPointer’)
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘char’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘char’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘signed char’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘unsigned char’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   mismatched types ‘const _CharT*’ and ‘FractionPointer’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘const char*’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘const char*’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘const signed char*’
+     cout<<dynamicFrac3<<"\n";
+           ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+Main.cpp:78:11: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘const unsigned char*’
+     cout<<dynamicFrac3<<"\n";
+           ^
+Main.cpp:79:27: error: cannot convert ‘FractionPointer’ to ‘Fraction*’ for argument ‘1’ to ‘void TimesTwo(Fraction*)’
+     TimesTwo (dynamicFrac3);
+                           ^
+Main.cpp:80:24: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘FractionPointer’)
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                        ^
+Main.cpp:80:24: note: candidates are:
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.9/ostream:108:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.9/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.9/ostream:117:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.9/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.9/ostream:127:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.9/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.9/ostream:166:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long int’
+/usr/include/c++/4.9/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.9/ostream:170:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long unsigned int’
+/usr/include/c++/4.9/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.9/ostream:174:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘bool’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.9/ostream:181:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.9/ostream:192:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘unsigned int’
+/usr/include/c++/4.9/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.9/ostream:201:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long int’
+/usr/include/c++/4.9/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.9/ostream:205:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long unsigned int’
+/usr/include/c++/4.9/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.9/ostream:220:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘double’
+/usr/include/c++/4.9/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.9/ostream:224:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘float’
+/usr/include/c++/4.9/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.9/ostream:232:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long double’
+/usr/include/c++/4.9/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.9/ostream:245:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘const void*’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   ‘FractionPointer’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘FractionPointer’)
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘char’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘char’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘signed char’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘unsigned char’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   mismatched types ‘const _CharT*’ and ‘FractionPointer’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘const char*’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘const char*’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘const signed char*’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+Main.cpp:80:26: note:   cannot convert ‘dynamicFrac3’ (type ‘FractionPointer’) to type ‘const unsigned char*’
+     cout<<"Times two: "<<dynamicFrac3<<"\n";
+                          ^
+Main.cpp:83:26: error: no match for ‘operator<<’ (operand types are ‘std::basic_ostream<char>’ and ‘FractionPointer’)
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                          ^
+Main.cpp:83:26: note: candidates are:
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.9/ostream:108:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.9/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.9/ostream:117:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.9/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.9/ostream:127:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.9/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.9/ostream:166:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long int’
+/usr/include/c++/4.9/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.9/ostream:170:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long unsigned int’
+/usr/include/c++/4.9/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.9/ostream:174:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘bool’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.9/ostream:181:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘int’
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.9/ostream:192:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘unsigned int’
+/usr/include/c++/4.9/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.9/ostream:201:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long int’
+/usr/include/c++/4.9/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.9/ostream:205:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long long unsigned int’
+/usr/include/c++/4.9/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.9/ostream:220:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘double’
+/usr/include/c++/4.9/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.9/ostream:224:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘float’
+/usr/include/c++/4.9/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.9/ostream:232:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘long double’
+/usr/include/c++/4.9/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.9/ostream:245:7: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘const void*’
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘FractionPointer’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   ‘FractionPointer’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘FractionPointer’)
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘char’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘char’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘signed char’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘unsigned char’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   mismatched types ‘const _CharT*’ and ‘FractionPointer’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const char*’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const char*’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const signed char*’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+Main.cpp:83:28: note:   cannot convert ‘dynamicFrac1’ (type ‘FractionPointer’) to type ‘const unsigned char*’
+     cout<<"EQUAL: "<<"\t"<<dynamicFrac1<<"\t"<<dynamicFrac2<<"\t"<<dynamicFrac3<<"\n";
+                            ^
+Main.cpp:87:18: error: no match for ‘operator<<’ (operand types are ‘FractionRegister’ and ‘Fraction’)
+       *fractions << staticFraction<<dynamicFrac3;
+                  ^
+Main.cpp:87:18: note: candidates are:
+In file included from /usr/include/c++/4.9/string:52:0,
+                 from /usr/include/c++/4.9/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.9/bits/ios_base.h:41,
+                 from /usr/include/c++/4.9/ios:42,
+                 from /usr/include/c++/4.9/ostream:38,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.9/bits/basic_string.h:2772:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.9/ostream:471:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:476:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.9/ostream:482:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.9/ostream:488:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.9/ostream:493:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.9/ostream:513:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/ostream:609:0,
+                 from /usr/include/c++/4.9/iostream:39,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<_CharT, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.9/ostream:530:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.9/ostream:543:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from /usr/include/c++/4.9/iostream:39:0,
+                 from Main.h:2,
+                 from Main.cpp:49:
+/usr/include/c++/4.9/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.9/ostream:548:5: note:   template argument deduction/substitution failed:
+Main.cpp:87:21: note:   ‘FractionRegister’ is not derived from ‘std::basic_ostream<char, _Traits>’
+       *fractions << staticFraction<<dynamicFrac3;
+                     ^
+In file included from Main.cpp:49:0:
+Main.h:50:25: note: std::ostream& operator<<(const ostream&, const FractionRegister&)
+   friend std::ostream & operator << (const std::ostream & s, const FractionRegister & frac);
+                         ^
+Main.h:50:25: note:   no known conversion for argument 1 from ‘FractionRegister’ to ‘const ostream& {aka const std::basic_ostream<char>&}’
+Main.h:16:25: note: std::ostream& operator<<(std::ostream&, const Fraction&)
+   friend std::ostream & operator << (std::ostream & s, const Fraction & frac);
+                         ^
+Main.h:16:25: note:   no known conversion for argument 1 from ‘FractionRegister’ to ‘std::ostream& {aka std::basic_ostream<char>&}’
+<builtin>: recipe for target 'Main.o' failed
+make: *** [Main.o] Error 1

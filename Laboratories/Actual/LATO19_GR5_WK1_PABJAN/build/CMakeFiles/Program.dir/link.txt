@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/Program.dir/Figury.cpp.o CMakeFiles/Program.dir/Ksztalt.cpp.o CMakeFiles/Program.dir/Kwadrat.cpp.o CMakeFiles/Program.dir/Kolo.cpp.o CMakeFiles/Program.dir/Trojkat.cpp.o  -o Program -rdynamic 

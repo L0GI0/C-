@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/vtest/FVec.cpp
+FVec.h
+/home/logio/Desktop/vtest/FVec.h
+
+/home/logio/Desktop/vtest/FVec.h
+iostream
+-
+
+/home/logio/Desktop/vtest/vtest.cpp
+iostream
+-
+FVec.h
+/home/logio/Desktop/vtest/FVec.h
+

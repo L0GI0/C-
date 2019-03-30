@@ -1,0 +1,48 @@
+Start testing: Oct 24 17:25 CEST
+----------------------------------------------------------
+1/3 Testing: LearningTest1
+1/3 Test: LearningTest1
+Command: "/home/logio/Desktop/PPO/TestOfctest/build/Learning"
+Directory: /home/logio/Desktop/PPO/TestOfctest/build
+"LearningTest1" start time: Oct 24 17:25 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LearningTest1" end time: Oct 24 17:25 CEST
+"LearningTest1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: LearningTest2
+2/3 Test: LearningTest2
+Command: "/home/logio/Desktop/PPO/TestOfctest/build/Learning"
+Directory: /home/logio/Desktop/PPO/TestOfctest/build
+"LearningTest2" start time: Oct 24 17:25 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LearningTest2" end time: Oct 24 17:25 CEST
+"LearningTest2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: LearningTest3
+3/3 Test: LearningTest3
+Command: "/home/logio/Desktop/PPO/TestOfctest/build/Learning"
+Directory: /home/logio/Desktop/PPO/TestOfctest/build
+"LearningTest3" start time: Oct 24 17:25 CEST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LearningTest3" end time: Oct 24 17:25 CEST
+"LearningTest3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 24 17:25 CEST

@@ -1,0 +1,24 @@
+cmake_minimum_required( VERSION 2.6)
+
+project(Test)
+
+add_executable(Test main.cpp)
+
+set(SRC main.cpp costam.cpp costam.h)
+
+set(CMAKE_BUILD_TYPE Release)
+
+add_library(TestLib ${SRC})
+
+target_link_libaries(Test TestLib)
+
+set(CMAKE_CXX_FLAGS_DEBUG ${CMAKE_CXX_FLAGS_DEBUG} -Wall -O0 
+-DLIB-TEST)
+
+set(CMAKE_CXX_FLAGS_RELEASE ${CMAKE_CXX_FLAGS_RELEASE} -Wall -O0
+-DLIB-TEST)
+
+enable_testing()
+
+add_test(TestName1 Test)
+

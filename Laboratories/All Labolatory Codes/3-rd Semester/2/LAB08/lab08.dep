@@ -1,0 +1,2 @@
+lab08.o: lab08.cpp lab08.h Kanapka.h KanapkaZOgorkiem.h \
+ KanapkaZMielonka.h KanapkaZSerem.h KanapkaWypasiona.h Menu.h

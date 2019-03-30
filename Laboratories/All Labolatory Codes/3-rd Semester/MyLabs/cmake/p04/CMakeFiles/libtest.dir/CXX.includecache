@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/PPO/cmake/p04/lib.cpp
+lib.h
+/home/logio/Desktop/PPO/cmake/p04/lib.h
+
+/home/logio/Desktop/PPO/cmake/p04/lib.h
+iostream
+-
+

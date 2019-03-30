@@ -1,0 +1,17 @@
+CXX=g++
+CXXFLAGS=-Wall -g
+
+all: program
+program: Iloczyn1.o Iloczyn2.o Iloczyn.o Kwadrat1.o Main.o PolozeniePoczatkowe.o Przyspieszenie.o Suma1.o Suma2.o
+	$(CXX) $(CXXFLAGS) $^ -o program
+Iloczyn1.o: Iloczyn1.cpp Iloczyn1.h Iloczyn.h
+Iloczyn2.o: Iloczyn2.cpp Iloczyn2.h Iloczyn.h
+Kwadrat1.o: Kwadrat1.cpp Kwadrat1.h Kwadrat.h
+Main.o: Main.cpp Czas.h
+PolozeniePoczatkowe.o: PolozeniePoczatkowe.cpp PolozeniePoczatkowe.h
+Przyspieszenie.o: Przyspieszenie.cpp Przyspieszenie.h Predkosc.h
+Suma1.o: Suma1.cpp Suma1.h Suma.h
+Suma2.o: Suma2.cpp Suma2.h Suma.h
+
+clean:
+	rm *.o

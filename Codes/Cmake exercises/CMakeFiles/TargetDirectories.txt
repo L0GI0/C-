@@ -1,0 +1,3 @@
+/home/logio/Codes/C++/Cmake exercises/CMakeFiles/rebuild_cache.dir
+/home/logio/Codes/C++/Cmake exercises/CMakeFiles/Tutorial.dir
+/home/logio/Codes/C++/Cmake exercises/CMakeFiles/edit_cache.dir

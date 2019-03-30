@@ -1,0 +1,52 @@
+/*
+** 16.02.2010
+**
+**
+**
+*/
+
+#ifndef READER_H
+#define READER_H
+
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <vector>
+#include <utility>
+
+class Reader {
+public:
+  Reader(std::string FileName = "file.conf") {
+    FileIn.open(FileName.c_str());
+    /* if(!FileIn) {
+      throw BadFileName();
+    }*/
+    data.reserve(25);
+  }
+
+  ~Reader() {
+    FileIn.close();
+  }
+
+  void ReadFromStream() {
+    while(!FileIn.eof()) {
+      std::string file_name;
+      std::string other_data;
+      FileIn >> file_name;
+      element.first = file_name;
+      FileIn >> other_data;
+      element.second = other_data;;
+    
+    }
+    FileIn.clear();
+    FileIn.seekg(0);
+  }
+
+private:
+  std::ifstream FileIn;
+  std::vector <std::pair <std::string,std::string> > data;
+  std::pair <std::string,std::string> element;
+};
+
+
+#endif /* READER_H */

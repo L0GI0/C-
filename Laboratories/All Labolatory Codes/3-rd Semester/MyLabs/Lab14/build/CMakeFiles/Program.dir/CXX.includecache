@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stud2017/7pabjan/Desktop/Lab14/Point2D.cpp
+Point2D.h
+/home/stud2017/7pabjan/Desktop/Lab14/Point2D.h
+
+/home/stud2017/7pabjan/Desktop/Lab14/Point2D.h
+iostream
+-
+
+/home/stud2017/7pabjan/Desktop/Lab14/Point2DAverage.cpp
+Point2DAverage.h
+/home/stud2017/7pabjan/Desktop/Lab14/Point2DAverage.h
+
+/home/stud2017/7pabjan/Desktop/Lab14/Point2DAverage.h
+iostream
+-
+Point2D.h
+/home/stud2017/7pabjan/Desktop/Lab14/Point2D.h
+
+/home/stud2017/7pabjan/Desktop/Lab14/main.cpp
+Point2D.h
+/home/stud2017/7pabjan/Desktop/Lab14/Point2D.h
+Point2DAverage.h
+/home/stud2017/7pabjan/Desktop/Lab14/Point2DAverage.h
+iostream
+-
+algorithm
+-
+

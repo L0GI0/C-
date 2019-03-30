@@ -1,0 +1,3 @@
+/home/stud2017/7pabjan/Desktop/LATO19_GR5_WK1_PABJAN/build/CMakeFiles/edit_cache.dir
+/home/stud2017/7pabjan/Desktop/LATO19_GR5_WK1_PABJAN/build/CMakeFiles/rebuild_cache.dir
+/home/stud2017/7pabjan/Desktop/LATO19_GR5_WK1_PABJAN/build/CMakeFiles/Program.dir

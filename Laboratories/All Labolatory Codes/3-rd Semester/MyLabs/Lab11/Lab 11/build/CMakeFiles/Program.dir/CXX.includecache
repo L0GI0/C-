@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/Lab11/Lab 11/Main6.cpp
+MyString.h
+/home/logio/Desktop/Lab11/Lab 11/MyString.h
+iostream
+-
+
+/home/logio/Desktop/Lab11/Lab 11/MyString.cpp
+MyString.h
+/home/logio/Desktop/Lab11/Lab 11/MyString.h
+
+/home/logio/Desktop/Lab11/Lab 11/MyString.h
+iostream
+-
+cstring
+-
+

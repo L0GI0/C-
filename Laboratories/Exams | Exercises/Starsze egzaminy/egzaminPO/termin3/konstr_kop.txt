@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class box {
+		string opis;
+	public:
+		box(string a="DOMYSLNY") : opis(a) {};
+		box(box&);
+
+};
+
+box::box(box& wzor) {
+	opis = wzor.opis();
+}
+
+box fun() {
+}
+
+int main() {
+
+
+}

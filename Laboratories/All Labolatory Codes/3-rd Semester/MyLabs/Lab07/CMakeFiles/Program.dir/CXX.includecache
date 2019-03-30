@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/Lab07/EasyTab.cpp
+EasyTab.h
+/home/logio/Desktop/Lab07/EasyTab.h
+iostream
+-
+cstring
+-
+
+/home/logio/Desktop/Lab07/EasyTab.h
+
+/home/logio/Desktop/Lab07/main.cpp
+EasyTab.h
+/home/logio/Desktop/Lab07/EasyTab.h
+EasyTab.h
+/home/logio/Desktop/Lab07/EasyTab.h
+iostream
+-
+iomanip
+-
+

@@ -1,0 +1,3 @@
+/home/logio/Desktop/vtest/build/CMakeFiles/rebuild_cache.dir
+/home/logio/Desktop/vtest/build/CMakeFiles/Program.dir
+/home/logio/Desktop/vtest/build/CMakeFiles/edit_cache.dir

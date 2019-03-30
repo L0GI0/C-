@@ -1,0 +1,20 @@
+// ten plik MOZNA modyfikowc
+
+#include <iostream>
+#include "Samochod.h"
+
+void PilaSpalinowa::WypiszPoziomOleju() const
+{
+	std::cout<<"Poziom oleju wynosi "<<m_olej<<"."<<std::endl;
+}
+
+void WypiszPredkoscMaksymalna() const
+{
+	std::cout<<"Predkosc maksymalna tego pojazdu wynosi "<<m_predkosc<<"."<<std::endl;
+}
+
+void Samochod::Wypisz() const {
+    std::cout << "To jest " << m_nazwa << ".\n";
+    WypiszPredkoscMaksymalna();
+    WypiszPoziomOleju();
+}

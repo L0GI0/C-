@@ -1,0 +1,20 @@
+// ten plik MOZNA modyfikowc
+
+#include <iostream>
+#include "Rower.h"
+
+void WypiszZrodloNapedu() const
+{
+	std::cout<<"Do napedzenia tego urzadzenia uzywa sie "<<m_zrodlo<<"."<<std::endl;
+}
+
+void WypiszPredkoscMaksymalna() const
+{
+	std::cout<<"Predkosc maksymalna tego pojazdu wynosi "<<m_predkosc<<"."<<std::endl;
+}
+
+void Rower::Wypisz() const {
+    std::cout << "Wypisuje rower " << m_nazwa << ".\n";
+    WypiszPredkoscMaksymalna();
+    WypiszZrodloNapedu();
+}

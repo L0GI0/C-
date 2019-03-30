@@ -1,0 +1,9 @@
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/install/strip.dir
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/install.dir
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/libtest.dir
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/Tutorial.dir
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/edit_cache.dir
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/install/local.dir
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/test.dir
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/list_install_components.dir
+/home/logio/Desktop/PPO/cmake/p04/CMakeFiles/rebuild_cache.dir

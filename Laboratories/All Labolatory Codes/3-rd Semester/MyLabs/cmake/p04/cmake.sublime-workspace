@@ -1,0 +1,681 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"filename"
+			],
+			[
+				"data",
+				"datalen"
+			],
+			[
+				"end",
+				"endl\tbasic_ostream<_CharT, _Traits> & endl(basic_ostream<_CharT, _Traits> &__os)"
+			],
+			[
+				"add",
+				"add_value\tint add_value"
+			],
+			[
+				"emp",
+				"emplace_back\tvoid emplace_back(_Args &&__args...)"
+			],
+			[
+				"si",
+				"size_t"
+			],
+			[
+				"te",
+				"test"
+			],
+			[
+				"ty",
+				"typename"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"_",
+				"_v"
+			],
+			[
+				"con",
+				"constructor"
+			],
+			[
+				"c",
+				"cout"
+			],
+			[
+				"s",
+				"set_lbl"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 624,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 279,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cmake.sublime-project",
+			"settings":
+			{
+				"buffer_size": 1534,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "cmake (Linux)",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"cmake (Linux)",
+					""
+				],
+				[
+					"cmake (Linux)",
+					"clean"
+				],
+				[
+					"cmake (Linux)",
+					"install/strip"
+				],
+				[
+					"cmake (Linux)",
+					"install/local"
+				],
+				[
+					"cmake (Linux)",
+					"install"
+				],
+				[
+					"cmake (Linux)",
+					"list_install_components"
+				],
+				[
+					"cmake (Linux)",
+					"rebuild_cache"
+				],
+				[
+					"cmake (Linux)",
+					"Tutorial"
+				],
+				[
+					"cmake (Linux)",
+					"libtest"
+				],
+				[
+					"cmake (Linux)",
+					"test"
+				],
+				[
+					"cmake (Linux)",
+					"lib.o"
+				],
+				[
+					"cmake (Linux)",
+					"lib.i"
+				],
+				[
+					"cmake (Linux)",
+					"lib.s"
+				],
+				[
+					"cmake (Linux)",
+					"main.o"
+				],
+				[
+					"cmake (Linux)",
+					"main.i"
+				],
+				[
+					"cmake (Linux)",
+					"main.s"
+				]
+			],
+			[
+				"cmake (Linux)",
+				"test"
+			]
+		],
+		[
+			[
+				[
+					"cmake (Linux)",
+					""
+				],
+				[
+					"cmake (Linux)",
+					"clean"
+				],
+				[
+					"cmake (Linux)",
+					"rebuild_cache"
+				],
+				[
+					"cmake (Linux)",
+					"Tutorial"
+				],
+				[
+					"cmake (Linux)",
+					"main.o"
+				],
+				[
+					"cmake (Linux)",
+					"main.i"
+				],
+				[
+					"cmake (Linux)",
+					"main.s"
+				]
+			],
+			[
+				"cmake (Linux)",
+				"Tutorial"
+			]
+		],
+		[
+			[
+				[
+					"list",
+					""
+				],
+				[
+					"make",
+					""
+				],
+				[
+					"make - clean",
+					""
+				],
+				[
+					"make - clean all",
+					""
+				],
+				[
+					"make - run",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					""
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"make",
+				""
+			]
+		],
+		[
+			[
+				[
+					"list",
+					""
+				],
+				[
+					"make - clean",
+					""
+				],
+				[
+					"make - clean all",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "test",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ter",
+		"selected_items":
+		[
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"set ma",
+				"Set Syntax: Makefile"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"clan",
+				"Clang Format: Format Selection"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"gdb",
+				"SublimeGDB: Show Input Field"
+			],
+			[
+				"fort",
+				"Set Syntax: Fortran (Fixed Form)"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 533.0
+	},
+	"console":
+	{
+		"height": 241.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p04/lib.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p06/makefile",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p06/main.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p06/fun.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p04/CMakeLists.txt",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p04/main.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p04/cmake.sublime-project",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p01/cmake.sublime-project",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p01/CMakeLists.txt",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p01/main.cpp",
+		"/home/emv/c++_egzamin/make.sublime-project",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p07/makefile",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p07/main.d",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p07/fun.d",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p07/main.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p07/fun.h",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p07/fun.cpp",
+		"/home/emv/.config/sublime-text-3/Packages/User/Terminal.sublime-settings",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p03/main.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p04/makefile",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p05/makefile",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p05/main.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p03/makefile",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p01/main.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p02/CMakeLists.txt",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p03/CMakeLists.txt",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p03/lib.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/p03/main.cpp",
+		"/home/emv/dydaktyka/preoop/cpp.00a/cmake/real_example/CMakeLists.txt",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p07/Doxyfile",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/makefile_cpp_zajecia",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p01/makefile_",
+		"/home/emv/dydaktyka/preoop/cpp.00a/make/p02/makefile_",
+		"/home/emv/.config/sublime-text-3/Packages/Terminal/Terminal.sublime-settings",
+		"/home/emv/c++_egzamin/zad3/zad3.cpp",
+		"/home/emv/c++_egzamin/zad2/Makefile",
+		"/home/emv/c++_egzamin/zad2/zad2.cpp",
+		"/home/emv/c++_egzamin/zad1/zad1.cpp",
+		"/raid/wfitj167e/raid0/emv/python_gui/qt_mpl.py",
+		"/raid/wfitj167e/raid0/bin/plot2D_new.py",
+		"/raid/wfitj167e/raid0/TEMP_PRESS.log",
+		"/home/emv/c++_egzamin/_zad1_/Makefile",
+		"/home/emv/c++_egzamin/zad1/main.cpp",
+		"/home/emv/c++_egzamin/_zad1_/zad1.cpp",
+		"/home/emv/cpp_c++11/cpp.c++11.16_range_for/main.cpp",
+		"/home/emv/c++_egzamin/_00.move/Makefile",
+		"/home/emv/cpp_c++11/cpp.c++11.20_lambda_stl/main.cpp",
+		"/home/emv/c++_egzamin/_01/main.cpp",
+		"/home/emv/cpp_c++11/cpp.c++11.17_member_init_list/main.cpp",
+		"/home/emv/c++_egzamin/MakeInit",
+		"/home/emv/c++_egzamin/zad3_c++11/Makefile",
+		"/home/emv/c++_egzamin/zad1/Makefile",
+		"/home/emv/c++_egzamin/01/main.cpp",
+		"/home/emv/c++_egzamin/zad3_c++11/zad3.cpp",
+		"/home/emv/c++_egzamin/01/Makefile",
+		"/home/emv/c++_egzamin/00.move/main.cpp",
+		"/home/emv/c++_egzamin/zad3/Makefile",
+		"/home/emv/c++_egzamin/zad4/zad4.cpp",
+		"/home/emv/c++_egzamin/zad4/zad4_orig.cpp_",
+		"/home/emv/c++_egzamin/zad4/zad3_orig.cpp_",
+		"/home/emv/c++_egzamin/cpp.c++11.13_move_operator=/Makefile",
+		"/home/emv/c++_egzamin/cpp.c++11.13_move_operator=/main.cpp",
+		"/home/emv/cpp_c++11/MakeInit",
+		"/home/emv/c++_egzamin/type.cpp",
+		"/home/emv/c++_egzamin/main.cpp",
+		"/home/emv/cpp_c++11/cpp.c++11.01_decltype/type.h",
+		"/home/emv/cpp_c++11/cpp.c++11.01_decltype/main.cpp",
+		"/home/emv/fortran/estg_L4_l1/proj.sublime-project",
+		"/home/emv/fortran/estg_L4_l1/estg_L4.f",
+		"/home/emv/license.txt"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Markdown",
+			"from_spin",
+			"\\n\"",
+			"std::",
+			"rvalue_of_A",
+			"A",
+			"typeid"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CMake/CMake.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "cmake.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1503,
+								1503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1800.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 444.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "cmake (Linux)",
+	"project": "cmake.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/fortran/estg_L4_l1/proj.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
