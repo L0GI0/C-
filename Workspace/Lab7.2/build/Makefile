@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab06.2"
+CMAKE_SOURCE_DIR = "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab7.2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab06.2/build"
+CMAKE_BINARY_DIR = "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab7.2/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab06.2/build/CMakeFiles" "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab06.2/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab7.2/build/CMakeFiles" "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab7.2/build/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab06.2/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/logio/Desktop/Programming Languages/C++/Workspace/Lab7.2/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ Program/fast:
 	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/build
 .PHONY : Program/fast
 
-lab06.o: lab06.cpp.o
+main-5.o: main-5.cpp.o
 
-.PHONY : lab06.o
+.PHONY : main-5.o
 
 # target to build an object file
-lab06.cpp.o:
-	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/lab06.cpp.o
-.PHONY : lab06.cpp.o
+main-5.cpp.o:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/main-5.cpp.o
+.PHONY : main-5.cpp.o
 
-lab06.i: lab06.cpp.i
+main-5.i: main-5.cpp.i
 
-.PHONY : lab06.i
+.PHONY : main-5.i
 
 # target to preprocess a source file
-lab06.cpp.i:
-	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/lab06.cpp.i
-.PHONY : lab06.cpp.i
+main-5.cpp.i:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/main-5.cpp.i
+.PHONY : main-5.cpp.i
 
-lab06.s: lab06.cpp.s
+main-5.s: main-5.cpp.s
 
-.PHONY : lab06.s
+.PHONY : main-5.s
 
 # target to generate assembly for a file
-lab06.cpp.s:
-	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/lab06.cpp.s
-.PHONY : lab06.cpp.s
+main-5.cpp.s:
+	$(MAKE) -f CMakeFiles/Program.dir/build.make CMakeFiles/Program.dir/main-5.cpp.s
+.PHONY : main-5.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Program"
 	@echo "... edit_cache"
-	@echo "... lab06.o"
-	@echo "... lab06.i"
-	@echo "... lab06.s"
+	@echo "... main-5.o"
+	@echo "... main-5.i"
+	@echo "... main-5.s"
 .PHONY : help
 
 

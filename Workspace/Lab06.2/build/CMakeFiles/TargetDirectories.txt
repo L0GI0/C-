@@ -1,3 +1,0 @@
-/home/logio/Desktop/Programming Languages/C++/Workspace/Lab06.2/build/CMakeFiles/rebuild_cache.dir
-/home/logio/Desktop/Programming Languages/C++/Workspace/Lab06.2/build/CMakeFiles/Program.dir
-/home/logio/Desktop/Programming Languages/C++/Workspace/Lab06.2/build/CMakeFiles/edit_cache.dir

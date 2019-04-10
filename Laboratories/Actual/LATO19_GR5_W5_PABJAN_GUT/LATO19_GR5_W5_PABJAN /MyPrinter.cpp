@@ -16,7 +16,7 @@ void MyPrinter::print( const Printable & obj ) const
 {
 	auto castedColor = dynamic_cast<const AttColor*>(&obj);
 	auto castedFormat = dynamic_cast<const AttFormat*>(&obj);
-
+3
 	if(castedColor)
 	{	
 		std::cout << controlSeq( castedColor->getColor() );

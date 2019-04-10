@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/Programming Languages/C++/Workspace/Lab7.2/main-5.cpp
+iostream
+-
+main.h
+/home/logio/Desktop/Programming Languages/C++/Workspace/Lab7.2/main.h
+

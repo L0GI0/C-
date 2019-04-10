@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/Program.dir/lab06.cpp.o  -o Program 
