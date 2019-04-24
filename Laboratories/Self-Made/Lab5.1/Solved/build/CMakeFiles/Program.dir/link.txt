@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Program.dir/operator.cpp.o CMakeFiles/Program.dir/Malenstwo.cpp.o  -o Program 

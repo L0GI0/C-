@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Program.dir/ftest-1.cpp.o CMakeFiles/Program.dir/File.cpp.o CMakeFiles/Program.dir/Dir.cpp.o CMakeFiles/Program.dir/Component.cpp.o  -o Program 

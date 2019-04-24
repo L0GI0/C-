@@ -1,0 +1,3 @@
+/home/logio/Desktop/ExerciseArea/Lab3.1/Lab3.1 Revision/buld/CMakeFiles/rebuild_cache.dir
+/home/logio/Desktop/ExerciseArea/Lab3.1/Lab3.1 Revision/buld/CMakeFiles/Program.dir
+/home/logio/Desktop/ExerciseArea/Lab3.1/Lab3.1 Revision/buld/CMakeFiles/edit_cache.dir

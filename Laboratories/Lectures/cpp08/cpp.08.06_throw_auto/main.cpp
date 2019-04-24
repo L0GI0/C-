@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
 	catch(const Test1 K)
 	{
 		cout << "\nPo zlapaniu wyjatku\n";
-		//K.print();
+		K.print();
 	}
 	cout << "\nZa blokiem catch\n";
 }

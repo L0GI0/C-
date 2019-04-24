@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Program.dir/Main-6.cpp.o CMakeFiles/Program.dir/Type.cpp.o CMakeFiles/Program.dir/Miotacz.cpp.o  -o Program 

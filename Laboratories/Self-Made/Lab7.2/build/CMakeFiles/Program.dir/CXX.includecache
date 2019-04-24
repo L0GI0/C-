@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Main-6.cpp
+lab08.h
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/lab08.h
+iostream
+-
+
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Miotacz.cpp
+Miotacz.h
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Miotacz.h
+
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Miotacz.h
+Type.h
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Type.h
+
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Type.cpp
+Type.h
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Type.h
+
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Type.h
+iostream
+-
+
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/lab08.h
+Miotacz.h
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Miotacz.h
+Type.h
+/home/logio/Desktop/Programming Languages/C++/Laboratories/Self-Made/Lab7.2/Type.h
+

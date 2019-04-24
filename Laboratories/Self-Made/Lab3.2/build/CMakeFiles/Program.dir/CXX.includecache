@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoClass.cpp
+InfoClass.h
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoClass.h
+
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoClass.h
+iostream
+-
+string
+-
+
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoSmartPtr.cpp
+InfoSmartPtr.h
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoSmartPtr.h
+
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoSmartPtr.h
+InfoClass.h
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoClass.h
+
+/home/logio/Desktop/ExerciseArea/Lab3.2/PointerTest.cpp
+InfoSmartPtr.h
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoSmartPtr.h
+InfoClass.h
+/home/logio/Desktop/ExerciseArea/Lab3.2/InfoClass.h
+iostream
+-
+

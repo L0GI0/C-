@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/ExerciseArea/Lab5.1/Solved/Malenstwo.cpp
+Malenstwo.h
+/home/logio/Desktop/ExerciseArea/Lab5.1/Solved/Malenstwo.h
+
+/home/logio/Desktop/ExerciseArea/Lab5.1/Solved/Malenstwo.h
+iostream
+-
+
+/home/logio/Desktop/ExerciseArea/Lab5.1/Solved/operator.cpp
+Malenstwo.h
+/home/logio/Desktop/ExerciseArea/Lab5.1/Solved/Malenstwo.h
+iostream
+-
+

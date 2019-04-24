@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/ExerciseArea/Lab3.3/Component.cpp
+Component.h
+/home/logio/Desktop/ExerciseArea/Lab3.3/Component.h
+
+/home/logio/Desktop/ExerciseArea/Lab3.3/Component.h
+iostream
+-
+string
+-
+
+/home/logio/Desktop/ExerciseArea/Lab3.3/Dir.cpp
+Dir.h
+/home/logio/Desktop/ExerciseArea/Lab3.3/Dir.h
+
+/home/logio/Desktop/ExerciseArea/Lab3.3/Dir.h
+Component.h
+/home/logio/Desktop/ExerciseArea/Lab3.3/Component.h
+iostream
+-
+string
+-
+
+/home/logio/Desktop/ExerciseArea/Lab3.3/File.cpp
+File.h
+/home/logio/Desktop/ExerciseArea/Lab3.3/File.h
+
+/home/logio/Desktop/ExerciseArea/Lab3.3/File.h
+Component.h
+/home/logio/Desktop/ExerciseArea/Lab3.3/Component.h
+
+/home/logio/Desktop/ExerciseArea/Lab3.3/ftest-1.cpp
+Dir.h
+/home/logio/Desktop/ExerciseArea/Lab3.3/Dir.h
+File.h
+/home/logio/Desktop/ExerciseArea/Lab3.3/File.h
+Component.h
+/home/logio/Desktop/ExerciseArea/Lab3.3/Component.h
+

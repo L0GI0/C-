@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/logio/Desktop/ExerciseArea/Lab2.1/PVec.cpp
+PVec.h
+/home/logio/Desktop/ExerciseArea/Lab2.1/PVec.h
+cstring
+/home/logio/Desktop/ExerciseArea/Lab2.1/cstring
+
+/home/logio/Desktop/ExerciseArea/Lab2.1/PVec.h
+iostream
+-
+string
+-
+
+/home/logio/Desktop/ExerciseArea/Lab2.1/vtest.cpp
+iostream
+-
+string.h
+-
+PVec.h
+/home/logio/Desktop/ExerciseArea/Lab2.1/PVec.h
+PVec.h
+/home/logio/Desktop/ExerciseArea/Lab2.1/PVec.h
+
