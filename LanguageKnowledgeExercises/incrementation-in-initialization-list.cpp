@@ -1,29 +1,11 @@
 #include<stdio.h>
 #include<iostream>
 
-class A{
-  public:
-    int a;
-    A(int n): a(n)
-    {}
-};
 
-class B{
-  public:
-    int b;
-    B(int &n): b(n)
-    {}
-};
+int main(){ 
 
-class C: public A, public B{
-  public:
-    C(int n): A(n++), B(++n)
-    {}
-};
+  char A[] = {1,2,3,4,5,6,7,8,9}
 
-int main()
-{ 
-  int n=3;
-  C c(n);
-  std::cout<<c.a<<" "<<c.b<<"\n";
+  std::cout << "*(short*)A + 2 = " << *(short*)A + 2 std::endl; 
+
 }
